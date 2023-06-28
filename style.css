@@ -72,10 +72,21 @@ header{
 }
 #lista-instalados li{
     margin-bottom: 3vh;
+    transition: .35s;
+}
+#lista-instalados li:hover{
+    scale: 1.1;
 }
 #lista-instalados li a{
     font-size: 2.5vh;
     color: white;
+}
+.cat{
+    margin-bottom: 3vh;
+    transition: .35s;
+}
+.cat:hover{
+    scale: 1.1;
 }
 .placeholder-menu{
     height: 5vh;
@@ -123,11 +134,20 @@ header{
 .coluna{
     background-color: #B9B4D9;
     height: 35vh;
+    transition: .35s;
+    cursor: pointer; 
+}
+
+.coluna:hover{
+    transform: scale(1.1);
+}
+#lista-generos li:hover{
+    transform: scale(1.1);
 }
 .placeholder-biblio{
     width: 100%;
     height: 60%;
-    image-rendering: optimizeSpeed;
+    image-rendering: optimizeSpeed  ;
 }
 .nome-jogo{
     font-size: 1.5vw;
@@ -194,14 +214,14 @@ header{
 .esq{
     margin-left: 2vw;
     display: inline;
-    width: 30%;
+    width: 50%; 
     font-size: 2vw;
     color: white;
     
 }
 .dir{
     display: inline;
-    width: 70%;
+    width: 50%;
     margin-left: 20vw;
     font-size: 2vw;
     color: white;
@@ -220,6 +240,7 @@ header{
 }
 #lista-generos li{
     margin-bottom: 3vh;
+    transition: .35s;   
 }
 #lista-generos li a{
     font-size: 2vw;
@@ -263,6 +284,7 @@ header{
     width: 100%;
     height:7vh;
     display: flex;
+    margin-bottom:1.7vw;
 }
 #corpo-social{
     background-color: #424956;
@@ -359,6 +381,7 @@ h3 {
     }
     .esq{
         font-size: 5vw;
+    
     }
     .dir{
         font-size: 5vw;
@@ -368,5 +391,23 @@ h3 {
     }
     #lista-conf li a{
         font-size: 6vw;
+    }
+    #lista-generos li a{
+        font-size: 5vw;
+        color: white;
+    }
+    .nome-jogo{
+        font-size: 4vw;
+        margin-bottom: 0;
+        height: 8vh;
+    }
+    .preço{
+        font-size: 3vw;
+    }
+    .preço-ofertas{
+        font-size: 3vw;
+    }
+    .preço2{
+        font-size: 3vw;
     }
 }
