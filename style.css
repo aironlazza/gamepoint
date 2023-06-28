@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+}
+header{
+    width: 100vw;
+    margin: 0;
+    height: 10vh;
+    background-color: #283040;
+}
+#nav-top{
+    height: 10vh;
+}
+#logo{
+    height: 10vh;
+    position: absolute;
+    top: 0.5vh;
+    left: 2vw;
+}
+#lista-left {
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 3.5vh;
+    margin-left: 8.5vw;
+}
+#lista-left li{
+    display: inline;
+    margin-left: 0;
+}
+#lista-left li a {
+    font-size: 1.5vw;
+    color: rgb(219, 219, 219);
+    margin-left: 1.5vw;
+}
+#search{
+    font-size: 1.5vw;
+    margin: 0;
+    color: rgb(219, 219, 219);
+    float: right;
+    margin-right: 10vw;
+    background-color: #5D75A6;
+    margin-top: 2.5vh;
+    padding: 1vh;
+    border-radius: 5vw;
+}
+#lupa{
+    height: 3vh;
+    float: right;
+    margin-left: 20vw;
+}
+#menu{
+    float: left;
+    height: 90vh;
+    width: 25%;
+    background-color: #424956;
+    margin: 0;
+    padding: 0;
+    
+}
+#instalados{
+    margin-left: 5%;
+    text-decoration: underline;
+    font-size: larger;
+    color: white;
+
+}
+#lista-instalados li{
+    margin-bottom: 3vh;
+}
+#lista-instalados li a{
+    font-size: 2.5vh;
+    color: white;
+}
+.placeholder-menu{
+    height: 5vh;
+    vertical-align: middle;
+    image-rendering: optimizeSpeed ;
+} 
+#grid-container{
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    width: 75%;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    float: right;
+    background-image: linear-gradient(#545d6d, #5D75A6);
+}
+.row{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 3vh;
+    
+}
+.superior{
+    width: 100%;
+    height: 4vh;
+}
+.titulo{
+    display: inline;
+    float: left;
+    margin: 1vh;    
+    color: white;
+}
+.mostrar{
+    float: right;
+    display: inline;
+    margin: 1vh;
+    color: white;
+}
+.grid-jogos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1vw;
+}
+.coluna{
+    background-color: #B9B4D9;
+    height: 35vh;
+}
+.placeholder-biblio{
+    width: 100%;
+    height: 60%;
+    image-rendering: optimizeSpeed;
+}
+.nome-jogo{
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 0.5vh;
+    margin-top: 1vh;
+    text-align: center;
+    color: black;
+    height: 7vh;
+}
+.cate{
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    display: inline;
+    text-align: center;
+    float: left;
+    color: #424956;
+}
+.cate2{
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    display: inline;
+    text-align: center;
+    float: right;
+    color: #424956;
+}
+#corp{
+    margin: 0;
+    width: 100vw;
+}
+.categorias{
+    float: left;
+    height: 90vh;
+    width: 25%;
+    background-color: #424956;
+    margin: 0;
+
+}
+.cat{
+    display: block;
+    margin-bottom: 8vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+.cat a{
+    font-size: 4vh;
+    color: white;
+    margin: 0;
+}
+#lista-conf{
+    margin-top: 6vh;
+}
+#opcoes{
+    float: right;
+    height: 90vh;
+    width: 75%;
+    background-color: #545d6d;
+    margin: 0;
+}
+.esq{
+    margin-left: 2vw;
+    display: inline;
+    width: 30%;
+    font-size: 2vw;
+    color: white;
+    
+}
+.dir{
+    display: inline;
+    width: 70%;
+    margin-left: 20vw;
+    font-size: 2vw;
+    color: white;
+}
+#cat-loja{
+    float: left;
+    height: 90vh;
+    width: 25%;
+    background-color: #424956;
+    color: white;
+}
+#genero{
+    margin-left: 9%;
+    color: white;
+    font-size: 2vh;
+}
+#lista-generos li{
+    margin-bottom: 3vh;
+}
+#lista-generos li a{
+    font-size: 2vw;
+    color: white;
+}
+.novidades{
+    display: inline;
+    float: left;
+    margin: 1vh;    
+    color: white;
+}
+.mais{
+    float: right;
+    display: inline;
+    margin: 1vh;
+    color: white; 
+}
+.cat-loja{
+    display: inline;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+.preço{
+    display: inline;
+    color: green;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.preço2{
+    display: inline;
+    text-align: end;
+    color: green;
+    margin-left: 3vw;
+}
+.preço-ofertas{
+    display: inline;
+    text-decoration: line-through;
+    color: red;
+}
+.linha{
+    width: 100%;
+    height:7vh;
+    display: flex;
+}
+#corpo-social{
+    background-color: #424956;
+}
+#imagem {
+    height: 20vw;
+}
+h1 {
+    font-size: 4vw;
+    margin: 1vw;
+    color: white;
+}
+h3 {
+    font-size: 3vw;
+    margin: 1vw;
+    color: white;
+}
+
+@media only screen and (max-width: 900px){
+    header{
+        height: 40vw;
+    }
+    #logo{
+        height: 30vw;
+        left: 8.5vw;
+        top: 0;
+    }
+    #lista-left{
+        float: right;
+        margin-right: 8.5vw;
+        margin-top: 1.5vh;
+    }
+    #lista-left li{
+        display: block;
+    }
+    #lista-left li a{
+        width: 40vw;
+        font-size: 5vw;
+    }
+    #menu{
+        width: 100vw;
+    }
+    #grid-container{
+        width: 100%;
+        height: 100%;
+    }
+    .coluna{
+        height: 40vh;
+    }
+    .nome-jogo{
+        height: 9.5vh;
+    }
+    .cate{
+        font-size: 3vw;
+    }
+    .cate2{
+        font-size: 3vw;
+    }
+    .grid-jogos{
+        grid-template-columns: 1fr 1fr;
+    }
+    #cat-loja{
+        width: 100vw;
+        display: block;
+
+    }
+    #search{
+        display: block;
+        font-size: 4vw;
+        width: 80vw;
+        margin-right: 8.5vw;
+        margin-top: 1.5vw;
+        padding: 1vw;
+    }
+    .categorias{
+        width: 100vw;
+        height: 60vh;
+    }
+    .cat{
+        margin-bottom: 4vw;
+    }
+    #opcoes{
+        width: 100vw;
+        height: 60vh;
+    }
+    .linha{
+        margin-bottom: 4vw;
+    }
+    .titulo{
+        font-size: 4vw;
+    }
+    .mostrar{
+        font-size: 4vw;
+    }
+    .esq{
+        font-size: 5vw;
+    }
+    .dir{
+        font-size: 5vw;
+    }
+    .categorias{
+        height: 90vw;
+    }
+    #lista-conf li a{
+        font-size: 6vw;
+    }
+}
