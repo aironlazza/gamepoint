@@ -101,7 +101,7 @@ header{
     margin: 0;
     padding: 0;
     float: right;
-    background-image: linear-gradient(#545d6d, #5D75A6);
+    background-color: #1A004D;
 }
 .row{
     padding-left: 2vw;
