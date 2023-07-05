@@ -318,12 +318,12 @@ h3 {
 }
 #contato{
     display: block;
-    height: 4vh;
+    height: 6vh;
     font-size: 4vh;
     margin-top: 1vh;
 }
 .contato-img{
-    height: 4vh;
+    height: 6vh;
 }
 .msg{
     width: auto;
