@@ -37,7 +37,7 @@ function buscarAmigos() {
 function buscarConfig() {
   let input = document.getElementById('search-config').value
   input=input.toLowerCase();
-  let x = document.getElementsByClassName('esq');
+  let x = document.getElementsByClassName('linha');
     
   for (i = 0; i < x.length; i++) { 
       if (!x[i].innerHTML.toLowerCase().includes(input)) {
