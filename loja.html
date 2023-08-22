@@ -11,29 +11,45 @@
     <body id="corpo">
         <header>
             <nav id="nav-top">
-                <img src="logo game point.png" id="logo">
-                <ul id="lista-left">
-                    <li>
-                        <a href="loja.html" style="color:#12C2E9">LOJA</a>
-                    </li>
-                    <li>
-                        <a href="index.html">BIBLIOTECA</a>
-                    </li>
-                    <li>
-                        <a href="social.html">AMIGOS</a>
-                    </li>
-                    <li>
-                        <a href="config.html">CONFIGURAÇÕES</a>
-                    </li>
-                </ul>
+                <img src="img/site/logo game point.png" id="logo">
+                <button id="menu-toggle">
+                    <ul id="menu-lista">
+                        <li>    
+                            <a href="loja.html" style="color:#12C2E9;">LOJA</a>
+                        </li>
+                        <li>
+                            <a href="index.html">BIBLIOTECA</a>
+                        </li>
+                        <li>
+                            <a href="social.html">AMIGOS</a>
+                        </li>
+                        <li>
+                            <a href="config.html">CONFIGURAÇÕES</a>
+                        </li>
+                    </ul>
+                </button>
+                    <ul id="lista-left">
+                        <li>
+                            <a href="loja.html" style="color:#12C2E9">LOJA</a>
+                        </li>
+                        <li>
+                            <a href="index.html">BIBLIOTECA</a>
+                        </li>
+                        <li>
+                            <a href="social.html">AMIGOS</a>
+                        </li>
+                        <li>
+                            <a href="config.html">CONFIGURAÇÕES</a>
+                        </li>
+                    </ul>
                 <p id="search">
-                    Pesquisar <img src="lupa.png" id="lupa">
+                    Pesquisar <img src="img/site/lupa.png" id="lupa">
                 </p>
             </nav>
         </header>
     </head>
     <body>
-        <div id="cat-loja">
+        <div id="menu">
             <p id="genero">GÊNEROS<p>
             <ul id="lista-generos">
                 <li>
@@ -77,7 +93,7 @@
                 <div class="grid-jogos">
                     <div class="coluna">
                         <a class="jogo">
-                         <img src="re4.jpg" class="placeholder-biblio">
+                         <img src="img/jogos/re4.jpg" class="placeholder-biblio" alt="capa resident evil 4 remake:a face de um homem sério e uma mulher no meio de um cemiterio sombrio com o nome do jogo escrito no meio da tela">
                          <p class="nome-jogo"> RESIDENT EVIL 4 REMAKE</p>
                          <p class="cate">TERROR</p><p class="cate2">AÇÃO</p>
                          <p class="preço">R$249,99</p>
@@ -85,7 +101,7 @@
                     </div>
                     <div class="coluna">
                         <a class="jogo">
-                          <img src="jedi (1).jpg" class="placeholder-biblio">
+                          <img src="img/jogos/jedi (1).jpg" class="placeholder-biblio" alt="capa star wars: jedi survivor: um espadachim segurando um sabre de luz, com um robo pequeno ao seu lado em um cenario arenoso vermelho de outro planeta ao entardecer">
                           <p class="nome-jogo"> STAR WARS: JEDI SURVIVOR</p>
                           <p class="cate">AÇÃO</p><p class="cate2">AVENTURA</p>
                           <p class="preço">R$249,00</p>
@@ -93,7 +109,7 @@
                     </div>
                     <div class="coluna">
                           <a class="jogo">
-                            <img src="hogwarts.jpg" class="placeholder-biblio">
+                            <img src="img/jogos/hogwarts.jpg" class="placeholder-biblio" alt="capa hogwarts legacy: uma pessoa encapuzada na beira de um rochedo segurando uma varinha com um brilho na ponta olhando ao longe um castelo coberto de nevoa com dois dragões o sobrevoando">
                             <p class="nome-jogo"> HOGWARTS LEGACY</p>
                             <p class="cate">AÇÃO</p><p class="cate2">RPG</p>
                             <p class="preço">R$249,00</p>
@@ -101,7 +117,7 @@
                     </div>
                     <div class="coluna">
                     <a class="jogo">    
-                              <img src="elden.png" class="placeholder-biblio">
+                              <img src="img/jogos/elden.png" class="placeholder-biblio" alt="capa Elden Ring: Em um cenário escuro, um cavaleiro ajoelhado, de cabeça baixa, se apoiando com as duas mãos em uma espada, no céu, têm um simbolo mágico, ao fundo se vê um cemitério, e mais ao fundo se vê uma cidade destruida">
                               <p class="nome-jogo"> ELDEN RING</p>
                               <p class="cate">RPG</p><p class="cate2">AÇÃO</p>
                               <p class="preço">R$249,00</p>
@@ -116,7 +132,7 @@
                       <div class="grid-jogos">
                         <div class="coluna">
                             <a class="jogo">
-                             <img src="hollow.jpg" class="placeholder-biblio">
+                             <img src="img/jogos/hollow.jpg" class="placeholder-biblio" alt="capa Hollow Knight: Um ser mágico, com chifres e olhos vazios, usando um manto e segurando um ferrão como espada, em cima de uma pedra, com tentáculos pretos o perseguindo, acima dele um feixe de luz com mariposas brilhantes voando">
                              <p class="nome-jogo"> HOLLOW KNIGHT</p>
                              <p class="cate">METROIDVANIA</p><p class="cate2">INDIE</p>
                              <p class="preço-ofertas">R$69,99</p><p class="preço2">R$29,99</p>
@@ -124,7 +140,7 @@
                         </div>
                         <div class="coluna">
                             <a class="jogo">
-                              <img src="reddead.jpg" class="placeholder-biblio">
+                              <img src="img/jogos/reddead.jpg" class="placeholder-biblio" alt="um homem de chapeu de cowboy apontando uma pistola na frente de um sol poente, ao fundo um bando de homens armados montados em cavalos e com o nome do jogo escrito acima deles">
                               <p class="nome-jogo"> RED DEAD REDEMPTION 2</p>
                               <p class="cate">AVENTURA</p><p class="cate2">AÇÃO</p>
                               <p class="preço-ofertas">R$149,99<p class="preço2">R$74,99</p>
@@ -132,7 +148,7 @@
                         </div>
                         <div class="coluna">
                               <a class="jogo">
-                                <img src="r6.jpg" class="placeholder-biblio">
+                                <img src="img/jogos/r6.jpg" class="placeholder-biblio" alt="um bando de 3 homens armados em um local bem iluminado tentando derrubar uma parede que de outro lado esta outro bando de 3 homens armados na penumbra">
                                 <p class="nome-jogo"> RAINBOW SIX SIEGE</p>
                                 <p class="cate">FPS</p><p class="cate2">ESTRATÉGIA</p>
                                 <p class="preço-ofertas">R$76,99<p class="preço2">R$23,99</p>
@@ -140,14 +156,33 @@
                         </div>
                         <div class="coluna">
                                <a class="jogo">
-                                  <img src="mk11.jpg" class="placeholder-biblio">
+                                  <img src="img/jogos/mk11.jpg" class="placeholder-biblio" alt="um homem de capuz e mascarado, pulando na sua direção com uma faca na mão, em um lugar amarelo e brilhante com um smibolo de dragão no fundo">
                                   <p class="nome-jogo"> MORTAL KOMBAT 11</p>
                                   <p class="cate">LUTA</p><p class="cate2">AÇÃO</p>
                                   <p class="preço-ofertas">R$179,99<p class="preço2">R$79,99</p>
                                 </a>
                         </div>
                       </div>
+                    </div>
             </div>
         </div>
+        <footer>
+            <div class="rodape">
+                <div class="info-footer">
+                    <p>GAME POINT</p>
+                    <a href="">Sobre nós</a>
+                    <a href="">Contato</a>
+                </div>
+                <div class="redes-sociais">
+                    <p>REDES SOCIAIS</p>
+                    <div class="links">
+                        <a href="https://pt-br.facebook.com"> <img src="img/redes/face.png"></a>
+                        <a href="https://www.instagram.com">  <img src="img/redes/insta.png"></div><a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
     </body>
+    
 </html>

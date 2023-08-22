@@ -6,6 +6,8 @@
 }
 body {
     margin: 0;
+    height: auto;
+    overflow-x: hidden;
 }
 header{
     width: 100vw;
@@ -21,6 +23,13 @@ header{
     position: absolute;
     top: 0.5vh;
     left: 2vw;
+}
+
+#menu-toggle{
+    display: none;
+}
+#menu-lista{
+    display: none;
 }
 #lista-left {
     float: left;
@@ -38,7 +47,7 @@ header{
     color: rgb(219, 219, 219);
     margin-left: 1.5vw;
 }
-#search{
+.search{
     font-size: 1.5vw;
     margin: 0;
     color: #ffffff;
@@ -49,6 +58,9 @@ header{
     padding: 1vh;
     border-radius: 5vw;
 }
+.search::placeholder{
+    color: white;
+}
 #lupa{
     height: 3vh;
     float: right;
@@ -58,7 +70,7 @@ header{
     float: left;
     height: 90vh;
     width: 25%;
-    background-color: #0b1a37;
+    background-color: #0B1F1F;
     margin: 0;
     padding: 0;
     
@@ -101,7 +113,7 @@ header{
     margin: 0;
     padding: 0;
     float: right;
-    background-color: #1A004D;
+    background-color: #012A38;
 }
 .row{
     padding-left: 2vw;
@@ -132,8 +144,7 @@ header{
     gap: 1vw;
 }
 .coluna{
-    background-color: #99e0f0;
-    height: 35vh;
+    background-color: #0B1F1F;
     transition: .35s;
     cursor: pointer; 
 }
@@ -146,8 +157,7 @@ header{
 }
 .placeholder-biblio{
     width: 100%;
-    height: 60%;
-    image-rendering: optimizeSpeed  ;
+    image-rendering: optimizeSpeed;
 }
 .nome-jogo{
     font-size: 1.5vw;
@@ -157,7 +167,7 @@ header{
     margin-bottom: 0.5vh;
     margin-top: 1vh;
     text-align: center;
-    color: black;
+    color: white;
     height: 7vh;
 }
 .cate{
@@ -167,7 +177,7 @@ header{
     display: inline;
     text-align: center;
     float: left;
-    color: #424956;
+    color: lightgray;
 }
 .cate2{
     padding: 0;
@@ -176,7 +186,7 @@ header{
     display: inline;
     text-align: center;
     float: right;
-    color: #424956;
+    color: lightgray;
 }
 #corp{
     margin: 0;
@@ -186,7 +196,7 @@ header{
     float: left;
     height: 90vh;
     width: 25%;
-    background-color: #0b1a37;
+    background-color: #0B1F1F;
     margin: 0;
 
 }
@@ -208,7 +218,7 @@ header{
     float: right;
     height: 90vh;
     width: 75%;
-    background-color: #1A004D;
+    background-color: #012a38;
     margin: 0;
 }
 .esq{
@@ -230,13 +240,14 @@ header{
     float: left;
     height: 90vh;
     width: 25%;
-    background-color: #0b1a37;;
-    color: white;
+    background-color: #0B1F1F;
+    color: #0B1F1F;
 }
 #genero{
     margin-left: 9%;
     color: white;
-    font-size: 2vh;
+    font-size: larger;
+    text-decoration: underline;
 }
 #lista-generos li{
     margin-bottom: 3vh;
@@ -268,6 +279,7 @@ header{
     color: green;
     text-align: center;
     margin-bottom: 5vh;
+    margin-left: 6.5vw;
 }
 .preço2{
     display: inline;
@@ -279,6 +291,7 @@ header{
     display: inline;
     text-decoration: line-through;
     color: red;
+    margin-left: 3.7vw;
 }
 .linha{
     width: 100%;
@@ -308,7 +321,7 @@ h3 {
     margin: 0;
     padding: 0;
     float: right;
-    background-color: #1A004D;
+    background-color: #012A38;
     
 }
 #header-chat{
@@ -338,6 +351,7 @@ h3 {
     margin: 0;
     font-size: 2vh;
     height: 3vh;
+    text-align: center;
 }
 #escrita{
     font-size: 1.5vw;
@@ -354,19 +368,96 @@ h3 {
     width: 71vw;
     height: 5vh;
 }
+footer{
+    background-color: #283040;
+    text-align: center;
+    
+}
+.rodape{
+    display: inline-block;
+    margin-bottom: 2vw;
+    width: 50%;
+
+}
+.info-footer{
+    width: 45%;
+    font-size: 2vw;
+    margin-left: 2vw;
+    color: white;
+    display: inline-block;
+    height: 100%;
+}
+.info-footer a{
+    font-size: 2vw;
+    display: block;
+    color: white;
+}
+.redes-sociais{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+}
+.redes-sociais p{
+    font-size: 2vw;
+    color: white;
+    margin: 0;
+    margin-bottom: 2vh;
+}
+.links a > img{
+    width: 3vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+
 @media only screen and (max-width: 900px){
     header{
-        height: 40vw;
+        height: 9.5vh;
     }
     #logo{
         height: 30vw;
         left: 8.5vw;
         top: 0;
+        display: none;
+    }
+    #menu-toggle{
+        height: 10vh;
+        width: 10vw;
+        display: inline-block;
+        padding: 0;
+        border: 0;
+        
+        background-image: url(img/site/menu-toggle.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+    }
+    #menu-lista{
+        margin: 0;
+        padding: 0;
+        text-align: unset;
+        vertical-align: top;
+        background-color: #283040;
+        margin-top: 9.4vh;
+        font-size: 8vw;
+        width: 100vw;
+        text-align: left;
+    }
+    #menu-lista li{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+
+
+    }
+    #sanduiche{
+        height: 10vw;
     }
     #lista-left{
         float: right;
         margin-right: 8.5vw;
         margin-top: 1.5vh;
+        display: none;
     }
     #lista-left li{
         display: block;
@@ -381,9 +472,6 @@ h3 {
     #grid-container{
         width: 100%;
         height: 100%;
-    }
-    .coluna{
-        height: 40vh;
     }
     .nome-jogo{
         height: 9.5vh;
@@ -402,20 +490,20 @@ h3 {
         display: block;
 
     }
-    #search{
+    .search{
         display: block;
-        font-size: 4vw;
+        font-size: 2vh;
         width: 80vw;
         margin-right: 8.5vw;
-        margin-top: 1.5vw;
-        padding: 1vw;
+        margin-top: 2vh;
+        padding: 1.5vh;
     }
     .categorias{
         width: 100vw;
         height: 60vh;
     }
     .cat{
-        margin-bottom: 4vw;
+        margin-bottom: 2vw;
     }
     #opcoes{
         width: 100vw;
@@ -436,9 +524,6 @@ h3 {
     }
     .dir{
         font-size: 5vw;
-    }
-    .categorias{
-        height: 90vw;
     }
     #lista-conf li a{
         font-size: 6vw;
@@ -479,4 +564,35 @@ h3 {
     width: 96vw;
 
     }
+    footer{
+        display: inline-block;
+        width: 100vw;
+    }
+    .rodape{
+        display: block;
+        text-align: center;
+        width: auto;
+    }
+    .info-footer{
+        display: block;
+        font-size: 7vw;
+        width: auto;
+    }
+    .info-footer p{
+        margin: 2vw;
+    }
+    .info-footer a{
+        font-size: 5vw;
+    }
+    .redes-sociais{
+        width: auto;
+    }
+    .redes-sociais p{
+        font-size: 7vw;
+    }
+    .links a img{
+        width: 15vw;
+
+    }
 }
+

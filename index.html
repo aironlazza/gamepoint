@@ -5,63 +5,78 @@
         <meta name="keywords" content="Jogos, Biblioteca, Loja, Games, Game, Shop, Videogame, Library, Social, Friends"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        
         <title>Biblioteca</title>
     </head>
     <body id="corpo">
         <header>
             <nav id="nav-top">
-                <img src="logo game point.png" id="logo">
-                <ul id="lista-left">
-                    <li>    
-                        <a href="loja.html">LOJA</a>
-                    </li>
-                    <li>
-                        <a href="index.html" style="color:#12C2E9;">BIBLIOTECA</a>
-                    </li>
-                    <li>
-                        <a href="social.html">AMIGOS</a>
-                    </li>
-                    <li>
-                        <a href="config.html">CONFIGURAÇÕES</a>
-                    </li>
-                </ul>
-                <div id="search">
-                    Pesquisar <img src="lupa.png" id="lupa">
-                </div>
+                <img src="img/site/logo game point.png" id="logo" alt="logo game point: em formato circular, com um monitor com um headset em cima, um teclado de computador e um mouse, todos com uma cor azul clara, de fundo um azul escuro e as bordas do circulo azul claro também">
+                <button id="menu-toggle">
+                    <ul id="menu-lista">
+                        <li>    
+                            <a href="loja.html">LOJA</a>
+                        </li>
+                        <li>
+                            <a href="index.html" style="color:#12C2E9;">BIBLIOTECA</a>
+                        </li>
+                        <li>
+                            <a href="social.html">AMIGOS</a>
+                        </li>
+                        <li>
+                            <a href="config.html">CONFIGURAÇÕES</a>
+                        </li>
+                    </ul>
+                </button>
+                    <ul id="lista-left">
+                        <li>    
+                            <a href="loja.html">LOJA</a>
+                        </li>
+                        <li>
+                            <a href="index.html" style="color:#12C2E9;">BIBLIOTECA</a>
+                        </li>
+                        <li>
+                            <a href="social.html">AMIGOS</a>
+                        </li>
+                        <li>
+                            <a href="config.html">CONFIGURAÇÕES</a>
+                        </li>
+                    </ul>
+                <input class="search" id="search-index" type="text" onkeyup="buscarJogos()" name="search" placeholder="Pesquisar...">
             </nav>
         </header>
         <div id="menu">
-            <p id="instalados">- Jogos Instalados:</p>
+            <p id="instalados">Jogos Instalados:</p>
             <ul id="lista-instalados">
                 <li>
-                    <a href=""><img src="dsicon.jpg" class="placeholder-menu"> Dark Souls 3</a>
+                    <a href=""><img src="img/jogos/dsicon.jpg" class="placeholder-menu" alt="Inicializador Dark souls 3: Um cavaleiro de cinzas se apagando, segurando uma espada com a mão direita, em um fundo de sol poente, com um castelo"> Dark Souls 3</a>
                 </li>
                 <li>
-                    <a href=""><img src="disicon.png" class="placeholder-menu"> Dishonored</a>
+                    <a href=""><img src="img/jogos/disicon.png" class="placeholder-menu" alt="Inicializador Dishonored: Um assassino segurando uma faca com a mão direita, e na mão esquerda uma magia, ao fundo têm um cenário distópico"> Dishonored</a>
                 </li>
                 <li>
-                    <a href=""><img src="eldenicon.png" class="placeholder-menu"> Elden Ring</a>
+                    <a href=""><img src="img/jogos/eldenicon.png" class="placeholder-menu" alt="Inicializador Elden Ring: Em um cenário escuro, um cavaleiro ajoelhado, de cabeça baixa, se apoiando com as duas mãos em uma espada, no céu, têm um simbolo mágico, ao fundo se vê um cemitério, e mais ao fundo se vê uma cidade destruida"> Elden Ring</a>
                 </li>
                 <li>
-                    <a href=""><img src="hl2icon.png" class="placeholder-menu"> Half Life 2</a>
+                    <a href=""><img src="img/jogos/hl2icon.png" class="placeholder-menu" alt="Inicializador Half Life 2: Um homem e uma mulher segurando um pé de cabra cada um, o homem com uma roupa futurista, e a mulher com uma camisa cinza e um colete de couro, com o fundo branco, e o nome do jogo"> Half Life 2</a>
                 </li>
                 <li>
-                    <a href=""><img src="hollowicon.png" class="placeholder-menu"> Hollow Knight</a>
+                    <a href=""><img src="img/jogos/hollowicon.png" class="placeholder-menu" alt="Inicializador Hollow Knight: Um ser mágico, com chifres e olhos vazios, usando um manto e segurando um ferrão como espada, em cima de uma pedra, com tentáculos pretos o perseguindo, acima dele um feixe de luz com mariposas brilhantes voando"> Hollow Knight</a>
                 </li>
                 <li>
-                    <a href=""><img src="jc4icon.png" class="placeholder-menu"> Just Cause 4</a>
+                    <a href=""><img src="img/jogos/jc4icon.png" class="placeholder-menu" alt="Inicializador Just Cause 4: Um homem com uma arma em suas costas, observando uma paisagem com montanhas, um rio e um furacão"> Just Cause 4</a>
                 </li>
                 <li>
-                    <a href=""><img src="payday2icon.png" class="placeholder-menu"> PayDay 2</a>
+                    <a href=""><img src="img/jogos/payday2icon.png" class="placeholder-menu" alt="Inicializador PayDay 2: Um grupo de assaltantes mascarados, segurando armas, entrando em um cofre de um banco"> PayDay 2</a>
                 </li>
                 <li>
-                    <a href=""><img src="portal2icon.png" class="placeholder-menu"> Portal 2</a>
+                    <a href=""><img src="img/jogos/portal2icon.png" class="placeholder-menu" alt="Inicializador Portal 2: Um robô pulando de um portal azul, para um portal laranja, ao fundo, uma fábrica"> Portal 2</a>
                 </li>
                 <li>
-                    <a href=""><img src="skyrimicon.png" class="placeholder-menu"> Skyrim</a>
+                    <a href=""><img src="img/jogos/skyrimicon.png" class="placeholder-menu" alt="Inicializador The Elder Scrolls V Skyrim: Um brasão com formato de um dragão preto com asas triângulares "> Skyrim</a>
                 </li>
                 <li>
-                    <a href=""><img src="superhoticon.png" class="placeholder-menu"> SUPERHOT</a>
+                    <a href=""><img src="img/jogos/superhoticon.png" class="placeholder-menu" alt="Inicializador Superhot: Um homem feito de cristal vermelho, tendo sua cabeça explodida por três projéteis pretos com rastro vermelho"> SUPERHOT</a>
                 </li>
             </ul>
         </div>
@@ -74,28 +89,28 @@
                     <div class="grid-jogos">
                         <div class="coluna">
                             <a href="" class="jogo">
-                                <img src="darksouls3.jpg" class="placeholder-biblio"> 
+                                <img src="img/jogos/darksouls3.jpg" class="placeholder-biblio"> 
                                 <p class="nome-jogo">Dark Souls 3</p>
                                 <p class="cate">Soulslike</p> <p class="cate2">RPG</p>
                             </a>
                         </div>
                         <div class="coluna">
                             <a href="" class="jogo">
-                                <img src="skyrim.jpg" class="placeholder-biblio"> 
+                                <img src="img/jogos/skyrim.jpg" class="placeholder-biblio"> 
                                 <p class="nome-jogo">The Elder Scrolls V: Skyrim</p>
                                 <p class="cate">Mundo Aberto</p> <p class="cate2">Aventura</p>
                             </a>
                         </div>
                         <div class="coluna">
                             <a href="" class="jogo">
-                                <img src="halflife2.jpg" class="placeholder-biblio"> 
+                                <img src="img/jogos/halflife2.jpg" class="placeholder-biblio"> 
                                 <p class="nome-jogo">Half-Life 2</p>
                                 <p class="cate">FPS</p> <p class="cate2">Ação</p>
                             </a>
                         </div>
                         <div class="coluna">
                             <a href="" class="jogo">
-                                <img src="justcause4.jpg" class="placeholder-biblio"> 
+                                <img src="img/jogos/justcause4.jpg" class="placeholder-biblio"> 
                                 <p class="nome-jogo">Just Cause 4</p>
                                 <p class="cate">Destruição</p> <p class="cate2">Mundo Aberto</p>
                             </a>
@@ -110,28 +125,28 @@
                     <div class="grid-jogos">
                         <div class="coluna">
                             <a href="" class="jogo">
-                                <img src="dishonored.jpg" class="placeholder-biblio"> 
+                                <img src="img/jogos/dishonored.jpg" class="placeholder-biblio"> 
                                 <p class="nome-jogo">Dishonored</p>
                                 <p class="cate">Furtivo</p> <p class="cate2">Primeira Pessoa</p>
                             </a>
                         </div>
                         <div class="coluna">
                             <a href="" class="jogo">
-                                <img src="portal2.jpg" class="placeholder-biblio"> 
+                                <img src="img/jogos/portal2.jpg" class="placeholder-biblio"> 
                                 <p class="nome-jogo">Portal 2</p>
                                 <p class="cate">Puzzle</p> <p class="cate2">Plataforma</p>
                             </a>
                         </div>
                         <div class="coluna">
                             <a href="" class="jogo">
-                                <img src="superhot.jpg" class="placeholder-biblio"> 
+                                <img src="img/jogos/superhot.jpg" class="placeholder-biblio"> 
                                 <p class="nome-jogo">SUPERHOT</p>
                                 <p class="cate">FPS</p> <p class="cate2">Indie</p>
                             </a>
                         </div>
                         <div class="coluna">
                             <a href="" class="jogo">
-                                <img src="payday2.jpeg" class="placeholder-biblio"> 
+                                <img src="img/jogos/payday2.jpeg" class="placeholder-biblio"> 
                                 <p class="nome-jogo">PAYDAY 2</p>
                                 <p class="cate">Cooperativo</p> <p class="cate2">FPS</p>
                             </a>
@@ -139,5 +154,22 @@
                     </div>
                 </div>
             </div>
+            <footer>
+                <div class="rodape">
+                    <div class="info-footer">
+                        <p>GAME POINT</p>
+                        <a href="">Sobre nós</a>
+                        <a href="">Contato</a>
+                    </div>
+                    <div class="redes-sociais">
+                        <p>REDES SOCIAIS</p>
+                        <div class="links">
+                            <a href="https://pt-br.facebook.com"> <img src="img/redes/face.png"></a>
+                            <a href="https://www.instagram.com">  <img src="img/redes/insta.png"></div><a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="script.js"></script>
     </body>
 </html>
