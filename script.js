@@ -19,6 +19,17 @@ function buscarJogos() {
           x[i].style.display="block";                 
       }
   }
+
+  let y = document.getElementsByClassName('inst');
+    
+  for (i = 0; i < y.length; i++) { 
+      if (!y[i].innerHTML.toLowerCase().includes(input)) {
+          y[i].style.display="none";
+      }
+      else {
+          y[i].style.display="block";                 
+      }
+  }
 }
 function buscarAmigos() {
   let input = document.getElementById('search-social').value
